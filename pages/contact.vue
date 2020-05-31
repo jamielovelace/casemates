@@ -1,17 +1,11 @@
 <template>
   <div class="c-page-wrap">
-    <hero />
     <p>Content</p>
   </div>
 </template>
 
 <script>
-import hero from '~/components/HeroBanner'
-export default {
-  components: {
-    hero
-  }
-}
+export default {}
 </script>
 
 <style></style>

@@ -7,11 +7,19 @@
 module.exports = {
   theme: {
     colors: {
-      primary: '#5c0a0c',
-      secondary: '#cc9900',
+      primary: {
+        default: '#5c0a0c',
+        light: '#5c0a0c',
+        dark: '#5c0a0c'
+      },
+      secondary: {
+        default: '#cc9900',
+        light: '#cc9900',
+        dark: '#cc9900'
+      },
       black: '#000',
       white: '#fff',
-      text: '#444'
+      body: '#444'
     },
     fontFamily: {
       body: ['Questrial', 'Helvetica', 'Arial', 'sans-serif']
