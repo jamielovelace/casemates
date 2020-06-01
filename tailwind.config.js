@@ -9,13 +9,24 @@ module.exports = {
     colors: {
       primary: {
         default: '#5c0a0c',
-        light: '#5c0a0c',
-        dark: '#5c0a0c'
+        light: '#732A2B',
+        dark: '#470507'
       },
       secondary: {
         default: '#cc9900',
-        light: '#cc9900',
-        dark: '#cc9900'
+        light: '#D6A822',
+        dark: '#B68700'
+      },
+      gray: {
+        100: '#f7fafc',
+        200: '#edf2f7',
+        300: '#e2e8f0',
+        400: '#cbd5e0',
+        500: '#a0aec0',
+        600: '#718096',
+        700: '#4a5568',
+        800: '#2d3748',
+        900: '#1a202c'
       },
       black: '#000',
       white: '#fff',
@@ -25,6 +36,8 @@ module.exports = {
       body: ['Questrial', 'Helvetica', 'Arial', 'sans-serif']
     }
   },
-  variants: {},
+  variants: {
+    scale: ['responsive', 'hover', 'focus', 'active']
+  },
   plugins: []
 }

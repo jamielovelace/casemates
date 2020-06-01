@@ -27,7 +27,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/vue-lazyload', ssr: false },
+    { src: '~/plugins/aos', ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -35,7 +38,9 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // Doc: https://github.com/aceforth/nuxt-optimized-images
+    '@aceforth/nuxt-optimized-images'
   ],
   /*
    ** Nuxt.js modules
@@ -46,6 +51,9 @@ export default {
     google: {
       families: ['Questrial']
     }
+  },
+  optimizedImages: {
+    optimizeImages: true
   },
   /*
    ** Build configuration

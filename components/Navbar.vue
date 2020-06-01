@@ -1,5 +1,7 @@
 <template>
-  <div class="py-3 px-5 bg-black">
+  <div
+    class="py-3 px-5 bg-black border-b-4 lg:border-b-6 border-solid border-primary"
+  >
     <div class="flex items-center justify-between max-w-screen-lg mx-auto">
       <nuxt-link to="/"><logo class="w-32 sm:w-auto"/></nuxt-link>
       <nav class="block">
@@ -36,12 +38,12 @@ export default {
           url: '/studios'
         },
         {
-          name: 'Contact',
-          url: '/contact'
-        },
-        {
           name: 'Book',
           url: '/book'
+        },
+        {
+          name: 'Contact',
+          url: '/contact'
         }
       ]
     }

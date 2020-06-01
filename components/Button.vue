@@ -3,7 +3,7 @@
     :is="type"
     :href="href"
     :to="to"
-    class="px-8 py-2 rounded-full text-white inline-block cursor-pointer font-bold"
+    class="transition duration-200 transform active:scale-95 px-8 py-2 rounded-full text-white inline-block cursor-pointer font-bold"
     :class="`bg-${color} hover:bg-${color}-light`"
   >
     <slot />
