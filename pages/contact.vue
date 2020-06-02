@@ -1,5 +1,5 @@
 <template>
-  <div class="c-page-wrap">
+  <div class="pb-10">
     <p>Content</p>
   </div>
 </template>
