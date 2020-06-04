@@ -18,7 +18,7 @@ export default {}
 }
 @screen md {
   .c-user-content h1 {
-    @apply text-3xl;
+    @apply text-4xl;
   }
 }
 

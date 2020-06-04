@@ -12,13 +12,14 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "aos": "^2.3.4",
+    "@nuxt/components": "^0.3.3",
+    "aos": "^3.0.0-beta.6",
     "core-js": "^2.6.10",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.0",
     "imagemin-svgo": "^8.0.0",
     "lqip-loader": "^2.2.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.12.0",
     "responsive-loader": "^1.2.0",
     "sharp": "^0.25.3",
     "vue-lazyload": "^1.3.3",

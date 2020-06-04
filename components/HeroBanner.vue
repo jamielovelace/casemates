@@ -14,7 +14,7 @@
       class="relative text-center z-20"
       data-aos="fade-up"
       data-aos-easing="ease-out"
-      data-aos-delay="300"
+      data-aos-delay="200"
     >
       <h1 class="text-4xl md:text-5xl text-white leading-tight px-5">
         Portsmouth's premier rehearsal studios
@@ -29,11 +29,7 @@
 </template>
 
 <script>
-import btn from '~/components/Button'
 export default {
-  components: {
-    btn
-  },
   computed: {
     optimisedImage() {
       return {
