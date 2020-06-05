@@ -66,7 +66,10 @@ export default {
       'aos-init',
       'aos-animate',
       'data-aos-delay',
-      'data-aos-duration'
+      'data-aos-duration',
+      'data-aos^=fade',
+      'data-aos=fade-up',
+      'data-aos=fade-down'
     ]
   },
   /*
