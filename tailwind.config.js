@@ -49,15 +49,6 @@ module.exports = {
       'pages/**/*.vue',
       'plugins/**/*.js',
       'nuxt.config.js'
-    ],
-    options: {
-      whitelist: [
-        'aos-init',
-        'aos-animate',
-        'data-aos-delay',
-        'data-aos-duration',
-        'fade-up'
-      ]
-    }
+    ]
   }
 }
