@@ -61,15 +61,15 @@ export default {
   optimizedImages: {
     optimizeImages: true
   },
-  purgeCSS: {
-    whitelist: [
-      'aos-init',
-      'aos-animate',
-      'data-aos-delay',
-      'data-aos-duration',
-      'fade-up'
-    ]
-  },
+  // purgeCSS: {
+  //   whitelist: [
+  //     'aos-init',
+  //     'aos-animate',
+  //     'data-aos-delay',
+  //     'data-aos-duration',
+  //     'fade-up'
+  //   ]
+  // },
   /*
    ** Build configuration
    */
