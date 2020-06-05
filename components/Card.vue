@@ -1,5 +1,13 @@
 <template>
-  <div class="rounded-md shadow-xl" :class="`bg-${color}`">
+  <div
+    class="rounded-md shadow-xl"
+    :class="{
+      'bg-primary': color === 'primary',
+      'bg-secondary': color === 'secondary',
+      'bg-black': color === 'black',
+      'bg-white': color === 'white'
+    }"
+  >
     <slot />
   </div>
 </template>

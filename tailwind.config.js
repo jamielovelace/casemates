@@ -42,7 +42,7 @@ module.exports = {
   plugins: [],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: true,
+    enabled: process.env.NODE_ENV === 'production',
     content: [
       'components/**/*.vue',
       'layouts/**/*.vue',
@@ -56,21 +56,7 @@ module.exports = {
         'aos-animate',
         'data-aos-delay',
         'data-aos-duration',
-        'fade-up',
-        'bg-white',
-        'bg-black',
-        'bg-primary',
-        'bg-primary-light',
-        'bg-primary-dark',
-        'bg-secondary',
-        'bg-secondary-light',
-        'bg-secondary-dark',
-        'hover:bg-primary',
-        'hover:bg-primary-light',
-        'hover:bg-primary-dark',
-        'hover:bg-secondary',
-        'hover:bg-secondary-light',
-        'hover:bg-secondary-dark'
+        'fade-up'
       ]
     }
   }
