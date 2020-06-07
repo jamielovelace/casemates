@@ -1,0 +1,118 @@
+backend:
+  name: git-gateway
+  branch: master
+
+local_backend: true
+
+media_folder: 'assets/uploads'
+public_folder: '/uploads'
+
+collections:
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      ########################
+      # Home 
+      ########################
+      - label: 'Home Page'
+        name: 'home'
+        file: 'assets/content/home.json'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - {label: 'Alert (Optional)', name: alert, widget: markdown}
+      ########################
+      # Studios 
+      ########################
+      - label: 'Studios Page'
+        name: 'studios'
+        file: 'assets/content/studios.json'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: Body, widget: markdown}
+          - label: Backline
+            name: backline
+            widget: list
+            fields:
+              - {label: Type, name: type, widget: string}
+              - label: Items
+                name: items 
+                widget: list
+      ########################
+      # Contact 
+      ########################
+      - label: 'Contact Page'
+        name: 'contact'
+        file: 'assets/content/contact.json'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: Body, widget: markdown}
+        
+  - name: 'page'
+    label: 'Page'
+    folder: 'assets/content/pages'
+    create: true
+    format: 'json'
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'list',
+          allow_add: true,
+          default: ['Front-end Development'],
+        }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Featured Image', name: 'feature_image', widget: 'image' }
+      - label: 'Content'
+        name: 'sections'
+        widget: 'list'
+        types:
+          - label: 'Content'
+            name: 'content'
+            widget: object
+            fields:
+              - { label: 'Body', name: 'body', widget: 'markdown' }
+          - label: 'Image'
+            name: 'image'
+            widget: object
+            fields:
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - {
+                  label: 'Caption',
+                  name: 'caption',
+                  widget: 'string',
+                  required: false,
+                }
+          - label: 'Dual Images'
+            name: 'dual_images'
+            widget: object
+            fields:
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - {
+                  label: 'Caption',
+                  name: 'caption',
+                  widget: 'string',
+                  required: false,
+                }
+              - { label: 'Image 2', name: 'image_2', widget: 'image' }
+              - {
+                  label: 'Caption 2',
+                  name: 'caption_2',
+                  widget: 'string',
+                  required: false,
+                }
+          - label: 'Title and Pre'
+            name: 'title_with_pre'
+            widget: object
+            fields:
+              - {
+                  label: 'Pre-title',
+                  name: 'pre_title',
+                  widget: 'string',
+                  default: 'Feature',
+                }
+              - { label: 'Title', name: 'title', widget: 'string' }

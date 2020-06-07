@@ -1,6 +1,6 @@
 <template>
   <div class="pb-10">
-    <hero-banner />
+    <hero-banner :title="title" />
     <div class="-mt-10 lg:-mt-16 z-20 px-2 relative">
       <div
         class="max-w-screen-md mx-auto mb-5"
@@ -36,19 +36,7 @@
           <card>
             <div class="p-8 lg:p-10">
               <user-content>
-                <h1>Music Rehearsal Studio in Portsmouth</h1>
-                <p>
-                  Casemates has been an established music rehearsal studio since
-                  1994 and is suitable for bands at any stage of their
-                  development. We have four rehearsal studios, each equipped
-                  with professional backline, valve guitar amps and active PA
-                  systems.
-                </p>
-                <p>
-                  We’re situated in the Hilsea Lines in Portsmouth. An 18th
-                  Century fortification full of history and impressive
-                  architecture. We occupy a grade 2 listed building.
-                </p>
+                <div v-html="$md.render(body)"></div>
               </user-content>
             </div>
           </card>
@@ -59,7 +47,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ params, app, payload, route, store }) {
+    const data = await import(`~/assets/content/home.json`)
+    return {
+      ...data
+    }
+  }
+}
 </script>
 
 <style></style>

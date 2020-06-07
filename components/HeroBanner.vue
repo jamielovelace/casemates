@@ -17,7 +17,7 @@
       data-aos-delay="200"
     >
       <h1 class="text-4xl md:text-5xl text-white leading-tight px-5">
-        Portsmouth's premier rehearsal studios
+        {{ title }}
       </h1>
       <p>
         <btn class="text-lg md:text-xl mt-3" color="primary" to="/book"
@@ -30,6 +30,12 @@
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String,
+      default: ''
+    }
+  },
   computed: {
     optimisedImage() {
       return {

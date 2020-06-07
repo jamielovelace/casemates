@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/components": "^0.3.3",
+    "@nuxtjs/markdownit": "^1.2.9",
     "aos": "^3.0.0-beta.6",
     "core-js": "^2.6.10",
     "imagemin-mozjpeg": "^9.0.0",

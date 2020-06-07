@@ -8,8 +8,9 @@
 export default {}
 </script>
 
-<style scoped>
-.c-user-content > * + * {
+<style>
+.c-user-content > * + *,
+.c-user-content > * > * + * {
   @apply mt-4;
 }
 

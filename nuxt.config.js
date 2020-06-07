@@ -48,16 +48,6 @@ export default {
     // Doc: https://github.com/aceforth/nuxt-optimized-images
     '@aceforth/nuxt-optimized-images'
   ],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: ['nuxt-webfontloader'],
-
-  webfontloader: {
-    google: {
-      families: ['Questrial']
-    }
-  },
   optimizedImages: {
     optimizeImages: true
   },
@@ -70,6 +60,18 @@ export default {
       'data-aos=fade-up',
       'data-aos^=fade'
     ]
+  },
+  /*
+   ** Nuxt.js modules
+   */
+  modules: ['@nuxtjs/markdownit', 'nuxt-webfontloader'],
+  markdownit: {
+    injected: true
+  },
+  webfontloader: {
+    google: {
+      families: ['Questrial']
+    }
   },
   /*
    ** Build configuration
