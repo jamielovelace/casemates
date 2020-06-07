@@ -8,12 +8,16 @@
   </div>
 </template>
 <script>
+import AOS from 'aos'
 import navbar from '~/components/Navbar'
 import siteFooter from '~/components/Footer'
 export default {
   components: {
     navbar,
     siteFooter
+  },
+  mounted() {
+    AOS.init()
   }
 }
 </script>

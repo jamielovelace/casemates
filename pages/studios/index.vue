@@ -75,7 +75,6 @@
 </template>
 
 <script>
-import AOS from 'aos'
 export default {
   data() {
     return {
@@ -127,9 +126,6 @@ export default {
         }
       ]
     }
-  },
-  mounted() {
-    AOS.init()
   }
 }
 </script>
