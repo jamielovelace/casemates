@@ -38,14 +38,6 @@ img[lazy='loading'] {
   filter: blur(10px);
 }
 
-[data-aos='fade-up'][data-aos='fade-up'] {
-  transform: translate3d(0, 50px, 0);
-}
-
-[data-aos='fade-down'][data-aos='fade-down'] {
-  transform: translate3d(0, -50px, 0);
-}
-
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.25s;
