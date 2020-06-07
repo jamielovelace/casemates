@@ -33,7 +33,7 @@ export default {
    */
   plugins: [
     { src: '~/plugins/vue-lazyload', ssr: false },
-    { src: '~/plugins/aos', ssr: false }
+    { src: '~/plugins/aos' }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -67,9 +67,7 @@ export default {
       'aos-animate',
       'data-aos-delay',
       'data-aos-duration',
-      'data-aos^=fade',
-      'data-aos=fade-up',
-      'data-aos=fade-down'
+      'fade-up'
     ]
   },
   /*
